@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Home</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h2 th:text="'Welcome  '+${role}+':'  + ${username} + '!'"></h2>
+<p>This is the user dashboard.</p>
+
+<form th:action="@{/logout}" method="post">
+    <button type="submit">Logout</button>
+</form>
+</body>
+</html>
